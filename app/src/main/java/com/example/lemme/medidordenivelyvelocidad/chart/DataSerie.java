@@ -22,8 +22,10 @@ public class DataSerie {
         serie = new ArrayList<>();
     }
 
-    public void addSensorLecture(float sensorLecture) {
-        serie.add(new Float(sensorLecture));
+    public void addSensorLecture(float value) {
+        SensorLecture sensorLecture = new SensorLecture(name, value);
+        sensorLecture.save();
+        serie.add(new Float(value));
         if(serie.size() > Utilities.MAXIMUM_LENGHT_DATA_SERIE_DISPLAYED) {
             serie.remove(0);
         }

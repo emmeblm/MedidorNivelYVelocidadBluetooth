@@ -29,8 +29,8 @@ public class DataSerieTest {
 
     @Test
     public void shouldAddSensorLectureToSerie() throws Exception {
-        assertEquals(dataSerie.getSerie().size(), 0);
+        assertEquals(dataSerie.getSensorLectures().size(), 0);
         dataSerie.addSensorLecture(1);
-        assertEquals(dataSerie.getSerie().size(), 1);
+        assertEquals(dataSerie.getSensorLectures().size(), 1);
     }
 }
