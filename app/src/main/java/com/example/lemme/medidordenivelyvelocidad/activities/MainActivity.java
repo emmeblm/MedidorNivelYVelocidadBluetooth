@@ -188,7 +188,7 @@ public class MainActivity extends Activity {
     }
 
     public void onClickStartActivityDatosHistoricos(View view) {
-        Intent intentProfile = new Intent(this, DatosHistoricosActivity.class);
+        Intent intentProfile = new Intent(this, HistoricalDataActivity.class);
         startActivity(intentProfile);
     }
 }

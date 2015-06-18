@@ -12,17 +12,15 @@ import com.example.lemme.medidordenivelyvelocidad.chart.SensorLecture;
 
 import java.util.ArrayList;
 
-public class DatosHistoricosActivity extends Activity {
-
+public class LevelMeterHistoricalActivity extends Activity {
     private ListView listViewMediciones;
     private ArrayList<String> lectures;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_historicos);
-
-        listViewMediciones = (ListView) this.findViewById(R.id.listViewMediciones);
+        setContentView(R.layout.activity_level_meter_historical);
+        listViewMediciones = (ListView) this.findViewById(R.id.listViewLevelMeter);
         ArrayAdapter<String> adaptador = crearAdaptadorListaMediciones();
         listViewMediciones.setAdapter(adaptador);
     }

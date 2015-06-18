@@ -47,8 +47,16 @@
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name=".activities.DatosHistoricosActivity"
+            android:name=".activities.HistoricalDataActivity"
             android:label="@string/title_activity_datos_historicos" >
+        </activity>
+        <activity
+            android:name=".activities.SpeedometerHistoricalActivity"
+            android:label="@string/title_activity_speedometer_historical" >
+        </activity>
+        <activity
+            android:name=".activities.LevelMeterHistoricalActivity"
+            android:label="@string/title_activity_level_meter_historical" >
         </activity>
     </application>
 
