@@ -11,4 +11,7 @@
     <color name="transparentBlueBluetooth">#315C979E</color>
     <color name="grayDisabled">#AAAAAAAA</color>
     <color name="whiteEnabled">#FFFFFFFF</color>
+    <color name="whiteBackground">#EEE</color>
+    <color name="titleBackground">#222</color>
+    <color name="layoutChartsBackground">#444</color>
 </resources>

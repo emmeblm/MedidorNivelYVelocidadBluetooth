@@ -186,4 +186,9 @@ public class MainActivity extends Activity {
         setEnabledStateToChartButtons(false);
         super.onBackPressed();
     }
+
+    public void onClickStartActivityDatosHistoricos(View view) {
+        Intent intentProfile = new Intent(this, DatosHistoricosActivity.class);
+        startActivity(intentProfile);
+    }
 }

@@ -46,6 +46,10 @@
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
+        <activity
+            android:name=".activities.DatosHistoricosActivity"
+            android:label="@string/title_activity_datos_historicos" >
+        </activity>
     </application>
 
 </manifest>

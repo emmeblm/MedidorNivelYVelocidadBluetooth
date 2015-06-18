@@ -4,15 +4,18 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_medidor_nivel">Medidor Nivel</string>
     <string name="title_activity_medidor_velocidad">Medidor Velocidad</string>
-    <string name="go_to_speedometer">Gráfica del Sensor de Velocidad</string>
-    <string name="connect_to_bluetooth_module">Conexión Módulo Bluetooth</string>
+    <string name="go_to_speedometer">Sensor de Velocidad</string>
+    <string name="connect_to_bluetooth_module">Gráficas de Sensores</string>
     <string name="disconnect_from_bluetooth_module">Desconectar del módulo bluetooth</string>
     <string name="speed_serie_name">Velocidad</string>
     <string name="connected">Conectado</string>
     <string name="disconnected">Desconectado</string>
-    <string name="go_to_level_meter">Gráfica del Sensor de Nivel</string>
+    <string name="go_to_level_meter">Sensor de Nivel</string>
     <string name="level_serie_name">Nivel</string>
     <string name="title_activity_sensor">SensorActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="bluetooth_module_title">Módulo Bluetooth</string>
+    <string name="historical_data">Datos Históricos</string>
+    <string name="title_activity_datos_historicos">DatosHistoricosActivity</string>
 </resources>

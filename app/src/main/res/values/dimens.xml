@@ -5,4 +5,27 @@
     <dimen name="image_width">170dp</dimen>
     <dimen name="space_layout_height">40dp</dimen>
     <dimen name="space_level_activity_layout_height">20dp</dimen>
+    <dimen name="tittle_connect_module_height">60dp</dimen>
+    <dimen name="tittle_connect_module_text_size">30sp</dimen>
+    <dimen name="bluetooth_module_title_height">40dp</dimen>
+    <dimen name="bluetooth_module_title_text_size">23sp</dimen>
+    <dimen name="bluetooth_module_title_margin_top">5dp</dimen>
+    <dimen name="module_state_layout_height">40dp</dimen>
+    <dimen name="module_state_layout_margin_bottom">5dp</dimen>
+    <dimen name="module_state_text_size">18sp</dimen>
+    <dimen name="switch_text_size">20sp</dimen>
+    <dimen name="switch_margin_right">20dp</dimen>
+    <dimen name="layout_charts_padding_left">10dp</dimen>
+    <dimen name="layout_charts_padding_right">10dp</dimen>
+    <dimen name="layout_charts_padding_top">5dp</dimen>
+    <dimen name="layout_charts_padding_bottom">5dp</dimen>
+    <dimen name="image_speedometer_margin_right">15dp</dimen>
+    <dimen name="button_go_to_speedometer_margin_left">15dp</dimen>
+    <dimen name="image_level_meter_margin_right">15dp</dimen>
+    <dimen name="button_go_to_level_meter_margin_left">5dp</dimen>
+    <dimen name="button_history_margin_top">20dp</dimen>
+    <dimen name="button_history_text_size">23sp</dimen>
+    <dimen name="button_history_margin_left">5dp</dimen>
+    <dimen name="button_history_margin_right">5dp</dimen>
+    <dimen name="button_history_height">60dp</dimen>
 </resources>
