@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -15,6 +16,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.lemme.medidordenivelyvelocidad.ActivityTabHostType;
 import com.example.lemme.medidordenivelyvelocidad.bluetooth.BluetoothHandler;
 import com.example.lemme.medidordenivelyvelocidad.R;
 import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
@@ -188,7 +190,8 @@ public class MainActivity extends Activity {
     }
 
     public void onClickStartActivityDatosHistoricos(View view) {
-        Intent intentProfile = new Intent(this, HistoricalDataActivity.class);
+        Intent intentProfile = new Intent(this, TabHostActivity.class);
+        intentProfile.putExtra("TabHostType", ActivityTabHostType.HISTORICAL);
         startActivity(intentProfile);
     }
 }

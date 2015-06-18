@@ -47,8 +47,8 @@
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name=".activities.HistoricalDataActivity"
-            android:label="@string/title_activity_datos_historicos" >
+            android:name=".activities.TabHostActivity"
+            android:label="@string/title_activity_tab_host" >
         </activity>
         <activity
             android:name=".activities.SpeedometerHistoricalActivity"
