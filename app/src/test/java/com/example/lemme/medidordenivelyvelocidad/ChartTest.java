@@ -5,6 +5,9 @@ import com.androidplot.xy.LineAndPointFormatter;
 import com.androidplot.xy.PointLabelFormatter;
 import com.androidplot.xy.SimpleXYSeries;
 import com.androidplot.xy.XYPlot;
+import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
+import com.example.lemme.medidordenivelyvelocidad.chart.DataSerie;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
 import org.junit.Before;
 import org.junit.Test;

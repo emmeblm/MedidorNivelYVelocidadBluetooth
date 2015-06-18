@@ -1,4 +1,4 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.activities;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -14,6 +14,10 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lemme.medidordenivelyvelocidad.bluetooth.BluetoothHandler;
+import com.example.lemme.medidordenivelyvelocidad.R;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
 
 public class MainActivity extends Activity {

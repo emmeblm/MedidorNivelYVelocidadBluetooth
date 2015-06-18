@@ -1,7 +1,9 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.chart;
 
 import com.androidplot.xy.LineAndPointFormatter;
 import com.androidplot.xy.SimpleXYSeries;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
+
 import java.util.ArrayList;
 
 /**

@@ -1,6 +1,10 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.exceptions;
 
 import android.app.Activity;
+
+import com.example.lemme.medidordenivelyvelocidad.activities.MainActivity;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
+import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothException;
 
 /**
  * Created by lemme on 5/12/15.

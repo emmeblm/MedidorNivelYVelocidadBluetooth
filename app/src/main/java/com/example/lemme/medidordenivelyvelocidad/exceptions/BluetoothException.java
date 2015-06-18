@@ -1,4 +1,4 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.exceptions;
 
 import android.app.Activity;
 

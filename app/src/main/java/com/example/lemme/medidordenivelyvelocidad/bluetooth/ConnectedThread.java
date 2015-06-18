@@ -1,9 +1,13 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.bluetooth;
 
 import android.bluetooth.BluetoothSocket;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+
+import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;

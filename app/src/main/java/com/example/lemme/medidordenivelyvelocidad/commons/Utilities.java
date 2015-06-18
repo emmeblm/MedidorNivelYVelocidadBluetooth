@@ -1,4 +1,4 @@
-package com.example.lemme.medidordenivelyvelocidad;
+package com.example.lemme.medidordenivelyvelocidad.commons;
 
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothSocket;

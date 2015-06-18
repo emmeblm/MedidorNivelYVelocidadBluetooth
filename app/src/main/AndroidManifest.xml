@@ -25,7 +25,7 @@
             android:value="com.example.lemme.medidordenivelyvelocidad" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -35,13 +35,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LevelMeterActivity"
+            android:name=".activities.LevelMeterActivity"
             android:label="@string/title_activity_medidor_nivel"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name=".SpeedometerActivity"
+            android:name=".activities.SpeedometerActivity"
             android:label="@string/title_activity_medidor_velocidad"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >

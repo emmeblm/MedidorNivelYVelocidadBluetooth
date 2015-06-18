@@ -3,6 +3,9 @@ package com.example.lemme.medidordenivelyvelocidad;
 import android.bluetooth.BluetoothSocket;
 import android.os.Handler;
 
+import com.example.lemme.medidordenivelyvelocidad.bluetooth.ConnectedThread;
+import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

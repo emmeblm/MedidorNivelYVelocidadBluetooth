@@ -4,6 +4,12 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 
+import com.example.lemme.medidordenivelyvelocidad.activities.MainActivity;
+import com.example.lemme.medidordenivelyvelocidad.bluetooth.BluetoothHandler;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
+import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothExceptionAdapterDisabled;
+import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothExceptionExitApp;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
