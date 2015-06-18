@@ -4,36 +4,39 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.lemme.medidordenivelyvelocidad.R;
+import com.example.lemme.medidordenivelyvelocidad.chart.SensorLecture;
+
+import java.util.ArrayList;
 
 public class DatosHistoricosActivity extends Activity {
+
+    private ListView listViewMediciones;
+    private ArrayList<String> lectures;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos_historicos);
+
+        listViewMediciones = (ListView) this.findViewById(R.id.listViewMediciones);
+        ArrayAdapter<String> adaptador = crearAdaptadorListaMediciones();
+        listViewMediciones.setAdapter(adaptador);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_datos_historicos, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private ArrayAdapter<String> crearAdaptadorListaMediciones() {
+        ArrayList<SensorLecture> sensorLectures = new ArrayList<>();
+        sensorLectures.addAll(SensorLecture.listAll(SensorLecture.class));
+        lectures = new ArrayList<>();
+        for(SensorLecture sensorLecture : sensorLectures) {
+            lectures.add(String.valueOf(sensorLecture.getSensorLecture()));
         }
 
-        return super.onOptionsItemSelected(item);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, lectures);
+        return adaptador;
     }
+
 }

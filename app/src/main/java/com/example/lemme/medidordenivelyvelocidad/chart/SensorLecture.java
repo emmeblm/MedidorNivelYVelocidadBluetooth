@@ -8,6 +8,7 @@ import com.orm.SugarRecord;
 public class SensorLecture extends SugarRecord<SensorLecture> {
     @SuppressWarnings("unused")
     private String sensorName;
+
     @SuppressWarnings("unused")
     private float sensorLecture;
 
@@ -19,5 +20,9 @@ public class SensorLecture extends SugarRecord<SensorLecture> {
     public SensorLecture(String sensorName, float sensorLecture) {
         this.sensorName = sensorName;
         this.sensorLecture = sensorLecture;
+    }
+
+    public float getSensorLecture() {
+        return sensorLecture;
     }
 }
