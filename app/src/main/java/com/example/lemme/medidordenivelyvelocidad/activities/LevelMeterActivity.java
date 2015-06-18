@@ -11,7 +11,6 @@ import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
 import java.util.HashMap;
 
-
 public class LevelMeterActivity extends Activity {
     Chart levelChart;
     private ConnectedThread connectedThread;
@@ -53,8 +52,8 @@ public class LevelMeterActivity extends Activity {
         serieOptions.put("Point Color", getResources().getColor(R.color.darkGreen));
         serieOptions.put("Fill Color", getResources().getColor(R.color.transparentGreen));
         serieOptions.put("Sampling Step", Utilities.SENSOR_SAMPLING_STEP);
-        serieOptions.put("Min Y-Axis Value", Utilities.MIN_Y_AXIS_VALUE_SPEEDOMETER);
-        serieOptions.put("Max Y-Axis Value", Utilities.MAX_Y_AXIS_VALUE_SPEEDOMETER);
+        serieOptions.put("Min Y-Axis Value", Utilities.MIN_Y_AXIS_VALUE_LEVEL_METER);
+        serieOptions.put("Max Y-Axis Value", Utilities.MAX_Y_AXIS_VALUE_LEVEL_METER);
 
         levelChart = new Chart(findViewById(R.id.chartLevel), serieOptions);
         levelChart.setDefaultSerieFormat();

@@ -32,7 +32,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bluetoothSwitch = (Switch) this.findViewById(R.id.bluetoothOnOff);
         goToSpeedChart = (Button) this.findViewById(R.id.btnSpeedChart);
         goToLevelChart = (Button) this.findViewById(R.id.btnLevelChart);
