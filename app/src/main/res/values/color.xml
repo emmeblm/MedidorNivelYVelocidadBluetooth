@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="redBluetoothDot">#FFCA1B23</color>
+    <color name="darkRedBluetoothDot">#FF621519</color>
+    <color name="transparentRedBluetoothDot">#2DCA1B23</color>
+    <color name="green">#FC1BB926</color>
+    <color name="darkGreen">#FC0F4C15</color>
+    <color name="transparentGreen">#361FFF32</color>
+    <color name="blueBluetooth">#FF5C979E</color>
+    <color name="darkBlueBluetooth">#FF305A60</color>
+    <color name="transparentBlueBluetooth">#315C979E</color>
+    <color name="grayDisabled">#AAAAAAAA</color>
+    <color name="whiteEnabled">#FFFFFFFF</color>
+</resources>

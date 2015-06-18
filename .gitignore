@@ -1,0 +1,16 @@
+# Gradle files
+.gradle/
+# Local configuration file (sdk path, etc)
+local.properties
+# Android Studio project files
+.idea/workspace.xml
+.idea/libraries
+# Generated files
+build/
+*/build/
+app/build
+# Documentation
+*.map
+*.md5
+# OSX files
+.DS_Store
