@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
-import com.example.lemme.medidordenivelyvelocidad.bluetooth.ConnectedThread;
 import com.example.lemme.medidordenivelyvelocidad.R;
+import com.example.lemme.medidordenivelyvelocidad.bluetooth.ConnectedThread;
+import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
 import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
 import java.util.HashMap;

@@ -12,6 +12,6 @@
     <color name="grayDisabled">#AAAAAAAA</color>
     <color name="whiteEnabled">#FFFFFFFF</color>
     <color name="whiteBackground">#EEE</color>
-    <color name="titleBackground">#222</color>
+    <color name="titleBackground">#f80b181f</color>
     <color name="layoutChartButtonsBackground">#f817292f</color>
 </resources>

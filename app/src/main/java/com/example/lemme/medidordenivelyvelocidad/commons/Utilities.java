@@ -1,6 +1,5 @@
 package com.example.lemme.medidordenivelyvelocidad.commons;
 
-import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothSocket;
 
 import java.util.UUID;

@@ -7,11 +7,11 @@ import android.bluetooth.BluetoothSocket;
 import android.os.Build;
 import android.util.Log;
 
+import com.example.lemme.medidordenivelyvelocidad.activities.MainActivity;
+import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothException;
 import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothExceptionAdapterDisabled;
 import com.example.lemme.medidordenivelyvelocidad.exceptions.BluetoothExceptionExitApp;
-import com.example.lemme.medidordenivelyvelocidad.activities.MainActivity;
-import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
 import java.io.IOException;
 import java.lang.reflect.Method;

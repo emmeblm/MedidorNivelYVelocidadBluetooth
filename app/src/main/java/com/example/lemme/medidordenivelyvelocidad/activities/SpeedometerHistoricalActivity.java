@@ -2,19 +2,18 @@ package com.example.lemme.medidordenivelyvelocidad.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.lemme.medidordenivelyvelocidad.R;
+import com.example.lemme.medidordenivelyvelocidad.array.adapter.CustomArrayAdapter;
 import com.example.lemme.medidordenivelyvelocidad.chart.SensorLecture;
 
 import java.util.ArrayList;
 
 public class SpeedometerHistoricalActivity extends Activity {
-    private ListView listViewMediciones;
-    private ArrayList<String> lectures;
+    private ListView listViewLectures;
+    private ArrayList<SensorLecture> sensorLectures;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,20 +23,19 @@ public class SpeedometerHistoricalActivity extends Activity {
     }
 
     private void initializeListView() {
-        listViewMediciones = (ListView) this.findViewById(R.id.listViewSpeedometer);
-        ArrayAdapter<String> adaptador = crearAdaptadorListaMediciones();
-        listViewMediciones.setAdapter(adaptador);
+        listViewLectures = (ListView) this.findViewById(R.id.listViewSpeedometer);
+        CustomArrayAdapter sensorLectureArrayAdapter = createAdapterSensorLectures();
+        listViewLectures.setAdapter(sensorLectureArrayAdapter);
     }
 
-    private ArrayAdapter<String> crearAdaptadorListaMediciones() {
-        ArrayList<SensorLecture> sensorLectures = new ArrayList<>();
-        sensorLectures.addAll(SensorLecture.listAll(SensorLecture.class));
-        lectures = new ArrayList<>();
-        for(SensorLecture sensorLecture : sensorLectures) {
-            lectures.add(String.valueOf(sensorLecture.getSensorLecture()));
-        }
-
-        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, lectures);
-        return adaptador;
+    private CustomArrayAdapter createAdapterSensorLectures() {
+        sensorLectures = new ArrayList<>();
+        sensorLectures.addAll(
+                SensorLecture.find(
+                        SensorLecture.class,
+                        "sensor_name like ?",
+                        getString(R.string.speed_serie_name)));
+        CustomArrayAdapter customArrayAdapter = new CustomArrayAdapter(this, sensorLectures);
+        return customArrayAdapter;
     }
 }
