@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.example.lemme.medidordenivelyvelocidad.R;
 import com.example.lemme.medidordenivelyvelocidad.bluetooth.ConnectedThread;
+import com.example.lemme.medidordenivelyvelocidad.bluetooth.MessageHandler;
 import com.example.lemme.medidordenivelyvelocidad.chart.Chart;
 import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;
 
@@ -39,8 +40,9 @@ public class SpeedometerActivity extends Activity {
     }
 
     private void createDataStreamToTalkToTheServer() {
-        connectedThread = new ConnectedThread(Utilities.bluetoothSocket, speedChart);
-        connectedThread.initializeHandler();
+        connectedThread = new ConnectedThread(Utilities.bluetoothSocket);
+        MessageHandler messageHandler = new MessageHandler(speedChart);
+        connectedThread.initializeHandler(messageHandler);
         connectedThread.start();
         Log.d(Utilities.TAG, "... Listening ... ");
     }

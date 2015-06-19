@@ -14,9 +14,9 @@ public class MessageHandler extends Handler {
     private Chart chart;
     private StringBuffer stringBuffer;
 
-    public MessageHandler(Chart chart, StringBuffer stringBuffer) {
+    public MessageHandler(final Chart chart) {
         this.chart = chart;
-        this.stringBuffer = stringBuffer;
+        this.stringBuffer = new StringBuffer();
     }
 
     @Override
@@ -42,6 +42,5 @@ public class MessageHandler extends Handler {
             default:
                 break;
         }
-    }
     }
 }
