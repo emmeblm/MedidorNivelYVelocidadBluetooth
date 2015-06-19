@@ -1,6 +1,8 @@
 package com.example.lemme.medidordenivelyvelocidad.exceptions;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.util.Log;
 
 import com.example.lemme.medidordenivelyvelocidad.activities.MainActivity;
 import com.example.lemme.medidordenivelyvelocidad.commons.Utilities;

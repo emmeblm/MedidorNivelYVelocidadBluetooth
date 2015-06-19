@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     continueConnecting(bluetoothHandler.connectToBluetoothDevice());
+                    setEnabledStateToChartButtons(true);
                 }
                 else {
                     bluetoothHandler.disconnectFromBluetoothDevice();
@@ -71,7 +72,6 @@ public class MainActivity extends Activity {
                     setEnabledStateToChartButtons(false);
                     bluetoothState.setText(getString(R.string.disconnected));
                 }
-
             }
         };
         return onCheckedChangeListener;
@@ -102,6 +102,7 @@ public class MainActivity extends Activity {
     public void setEnabledStateToChartButtons(Boolean bluetoothSwitchIsChecked) {
         goToSpeedChart.setEnabled(bluetoothSwitchIsChecked);
         goToLevelChart.setEnabled(bluetoothSwitchIsChecked);
+        bluetoothSwitch.setChecked(bluetoothSwitchIsChecked);
 
         if(bluetoothSwitchIsChecked) {
             bluetoothState.setText(getString(R.string.connected));
@@ -130,12 +131,14 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode == Utilities.ENABLE_BLUETOOTH_REQUEST && resultCode == RESULT_OK)
+        if(requestCode == Utilities.ENABLE_BLUETOOTH_REQUEST && resultCode == RESULT_OK) {
             continueConnecting(bluetoothHandler.connectToBluetoothDevice());
+        }
 
-        if(resultCode == RESULT_CANCELED) {
+        if(requestCode == Utilities.ENABLE_BLUETOOTH_REQUEST && resultCode == RESULT_CANCELED) {
             unregisterBroadcastReceiverToBluetoothEvents();
             bluetoothHandler.disconnectFromBluetoothDevice();
+            setEnabledStateToChartButtons(false);
         }
     }
 
@@ -189,7 +192,7 @@ public class MainActivity extends Activity {
         super.onBackPressed();
     }
 
-    public void onClickStartActivityDatosHistoricos(View view) {
+    public void onClickStartActivityTabHostDatosHostoricos(View view) {
         Intent intentProfile = new Intent(this, TabHostActivity.class);
         intentProfile.putExtra("TabHostType", ActivityTabHostType.HISTORICAL);
         startActivity(intentProfile);

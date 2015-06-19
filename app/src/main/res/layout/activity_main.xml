@@ -66,29 +66,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/layoutChartsBackground"
-        android:paddingLeft="@dimen/layout_charts_padding_left"
-        android:paddingRight="@dimen/layout_charts_padding_right"
-        android:paddingTop="@dimen/layout_charts_padding_top"
-        android:paddingBottom="@dimen/layout_charts_padding_bottom">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageSpeedometer"
-            android:layout_gravity="center"
-            android:src="@drawable/speedtesticon"
-            android:clickable="false"
-            android:layout_weight="0.25"
-            android:layout_marginRight="@dimen/image_speedometer_margin_right" />
+        android:background="#f81f383e">
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:text="@string/go_to_speedometer"
             android:id="@+id/btnSpeedChart"
             android:layout_gravity="center"
@@ -96,33 +81,13 @@
             android:onClick="onClickStartActivitySpeedometer"
             android:enabled="false"
             android:background="@color/transparentBlueBluetooth"
-            android:layout_weight="0.75"
-            android:layout_marginLeft="@dimen/button_go_to_speedometer_margin_left" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/layoutChartsBackground"
-        android:paddingLeft="@dimen/layout_charts_padding_left"
-        android:paddingRight="@dimen/layout_charts_padding_right"
-        android:paddingTop="@dimen/layout_charts_padding_top"
-        android:paddingBottom="@dimen/layout_charts_padding_bottom">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageLevelMeter"
-            android:layout_gravity="right"
-            android:src="@drawable/levelsicon"
-            android:layout_weight="0.25"
-            android:layout_marginRight="@dimen/image_level_meter_margin_right" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:text="@string/go_to_level_meter"
             android:id="@+id/btnLevelChart"
             android:layout_gravity="center"
@@ -130,8 +95,10 @@
             android:onClick="onClickStartActivityLevelMeter"
             android:enabled="false"
             android:background="@color/transparentBlueBluetooth"
-            android:layout_weight="0.75"
-            android:layout_marginLeft="@dimen/button_go_to_level_meter_margin_left" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
     </LinearLayout>
 
     <Button
@@ -147,5 +114,5 @@
         android:layout_marginLeft="@dimen/button_history_margin_left"
         android:layout_marginRight="@dimen/button_history_margin_right"
         android:clickable="true"
-        android:onClick="onClickStartActivityDatosHistoricos" />
+        android:onClick="onClickStartActivityTabHostDatosHostoricos" />
 </LinearLayout>

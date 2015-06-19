@@ -20,6 +20,10 @@ public class LevelMeterHistoricalActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_meter_historical);
+        initializeListView();
+    }
+
+    private void initializeListView() {
         listViewMediciones = (ListView) this.findViewById(R.id.listViewLevelMeter);
         ArrayAdapter<String> adaptador = crearAdaptadorListaMediciones();
         listViewMediciones.setAdapter(adaptador);
