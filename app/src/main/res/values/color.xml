@@ -13,5 +13,5 @@
     <color name="whiteEnabled">#FFFFFFFF</color>
     <color name="whiteBackground">#EEE</color>
     <color name="titleBackground">#222</color>
-    <color name="layoutChartsBackground">#444</color>
+    <color name="layoutChartButtonsBackground">#f817292f</color>
 </resources>
