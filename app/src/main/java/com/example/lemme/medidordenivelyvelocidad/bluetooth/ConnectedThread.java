@@ -37,33 +37,6 @@ public class ConnectedThread extends Thread {
 
     public void initializeHandler(MessageHandler messageHandler) {
         handler = messageHandler;
-
-//                new Handler() {
-//            @Override
-//            public void handleMessage(Message msg) {
-//                switch (msg.what) {
-//                    case Utilities.RECEIVE_MESSAGE:
-//                        byte[] readBuffer = (byte[]) msg.obj;
-//
-//                        stringBuffer.append(new String(readBuffer, 0, msg.arg1));
-//                        int endOfLine = stringBuffer.indexOf("\r\n");
-//                        if(endOfLine > 0){
-//                            String subString = stringBuffer.substring(0, endOfLine);
-//                            stringBuffer.delete(0, stringBuffer.length());
-//                            Log.d(Utilities.TAG, subString);
-//                            try {
-//                                chart.getSerie().addSensorLecture(Float.valueOf(subString));
-//                                chart.updateChart();
-//                            } catch (Exception ex) {
-//                                ex.printStackTrace();
-//                            }
-//                        }
-//                        break;
-//                    default:
-//                        break;
-//                }
-//            }
-//        };
     }
 
     @Override

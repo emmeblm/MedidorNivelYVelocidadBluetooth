@@ -43,7 +43,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        CompoundButton.OnCheckedChangeListener onCheckedChangeListener = initializeOnCheckedChangeListener(bluetoothSwitch);
+        CompoundButton.OnCheckedChangeListener onCheckedChangeListener =
+                initializeOnCheckedChangeListener(bluetoothSwitch);
         setCheckedStateListenerToBluetoothSwitch(bluetoothSwitch, onCheckedChangeListener);
         setEnabledStateToChartButtons(bluetoothSwitch.isChecked());
         createBroadcastReceiverToListenToBluetoothAdapterState();

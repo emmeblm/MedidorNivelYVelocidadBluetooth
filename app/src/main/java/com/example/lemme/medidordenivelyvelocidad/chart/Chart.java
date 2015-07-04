@@ -47,7 +47,7 @@ public class Chart {
         chartPlot.redraw();
     }
 
-    public DataSerie getSerie() {
+    public DataSerie getDataSerie() {
         return serie;
     }
 

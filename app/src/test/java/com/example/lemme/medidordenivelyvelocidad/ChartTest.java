@@ -54,7 +54,7 @@ public class ChartTest {
 
     @Test
     public void shouldGetASerieWithSpecifiedSerieOptionsStub() throws Exception {
-        DataSerie result = chart.getSerie();
+        DataSerie result = chart.getDataSerie();
 
         assertEquals(result.getName(), "Stub Name");
         assertEquals(result.getFormat(), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY);
